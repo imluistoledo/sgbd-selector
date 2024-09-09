@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona tu SGBD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <main class="main">
+        <h1 class="title">Selecciona tu SGBD</h1>
+        <p class="desc">
+            Responde a las siguientes preguntas para que puedas obtener una aproximacion al SGBD que mas te conviene.
+        </p>
+        <p class="inst">
+            Contesta las siguientes preguntas con la respuesta que mas se aproxime a tus necesidades.
+        </p>
+        <form class="frm-sgbd" method="get">
+            <div class="questions-cont">
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Seguridad
+                    </h3>
+                    <span class="question">
+                        1. Tu SGBD debe tener una seguridad:
+                    </span>
+                    <div class="options">
+                        <label for="sec-1">
+                            <input type="radio" name="security" id="sec-1" value="1" required data-sgbd="MySQL">
+                            Con buen soporte y cifrado basico.
+                        </label>
+                        <label for="sec-2">
+                            <input type="radio" name="security" id="sec-2" value="2" required data-sgbd="Oracle">
+                            Avanzada y cifrado completo.
+                        </label>
+                        <label for="sec-3">
+                            <input type="radio" name="security" id="sec-3" value="3" required data-sgbd="SQLServer">
+                            Robusta, con cifrado y autenticacion.
+                        </label>
+                        <label for="sec-4">
+                            <input type="radio" name="security" id="sec-4" value="4" required data-sgbd="PostgreSQL">
+                            Avanzado, con enfoque en integridad.
+                        </label>
+                        <label for="sec-5">
+                            <input type="radio" name="security" id="sec-5" value="5" required data-sgbd="MongoDB">
+                            Flexible, optimo en apps modernas.
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Costo
+                    </h3>
+                    <span class="question">
+                        2. Requieres un SGBD que tenga un costo:
+                    </span>
+                    <div class="options">
+                        <label for="cost-1">
+                            <input type="radio" name="cost" id="cost-1" value="1" required data-sgbd="MySQL">
+                            Gratuito.
+                        </label>
+                        <label for="cost-2">
+                            <input type="radio" name="cost" id="cost-2" value="2" required data-sgbd="Oracle">
+                            Costoso y sea basado en licencias.
+                        </label>
+                        <label for="cost-3">
+                            <input type="radio" name="cost" id="cost-3" value="3" required data-sgbd="SQLServer">
+                            Costoso y sea licenciado por una compañía.
+                        </label>
+                        <label for="cost-4">
+                            <input type="radio" name="cost" id="cost-4" value="4" required data-sgbd="PostgreSQL">
+                            Gratuito y de codigo abierto.
+                        </label>
+                        <label for="cost-5">
+                            <input type="radio" name="cost" id="cost-5" value="5" required data-sgbd="MongoDB">
+                            Gratuito y con opciones de pago.
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Curva de aprendizaje
+                    </h3>
+                    <span class="question">
+                        3. ¿Qué tan difícil debe ser gestionar tu SGBD?:
+                    </span>
+                    <div class="options">
+                        <label for="dif-1">
+                            <input type="radio" name="difficulty" id="dif-1" value="1" required data-sgbd="MySQL">
+                            Con buen soporte y cifrado basico.
+                        </label>
+                        <label for="dif-2">
+                            <input type="radio" name="difficulty" id="dif-2" value="2" required data-sgbd="Oracle">
+                            Avanzada u cifrado completo.
+                        </label>
+                        <label for="dif-3">
+                            <input type="radio" name="difficulty" id="dif-3" value="3" required data-sgbd="SQLServer">
+                            Robusta, con cifrado y autenticacion.
+                        </label>
+                        <label for="dif-4">
+                            <input type="radio" name="difficulty" id="dif-4" value="4" required data-sgbd="PostgreSQL">
+                            Avanzado, con enfoque en integridad.
+                        </label>
+                        <label for="dif-5">
+                            <input type="radio" name="difficulty" id="dif-5" value="5" required data-sgbd="MongoDB">
+                            Flexible, optimo en apps modernas.
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Escalabilidad
+                    </h3>
+                    <span class="question">
+                        4. ¿Qué tanto deseas crecer tu proyecto en tu SGBD?:
+                    </span>
+                    <div class="options">
+                        <label for="scal-1">
+                            <input type="radio" name="scalability" id="scal-1" value="1" required data-sgbd="MySQL">
+                            Sera limitado pero con opciones de clustering.
+                        </label>
+                        <label for="scal-2">
+                            <input type="radio" name="scalability" id="scal-2" value="2" required data-sgbd="Oracle">
+                            Sera muy alto para grandes volumenes de datos.
+                        </label>
+                        <label for="scal-3">
+                            <input type="radio" name="scalability" id="scal-3" value="3" required data-sgbd="SQLServer">
+                            Sera alto de acuerdo a la licencia.
+                        </label>
+                        <label for="scal-4">
+                            <input type="radio" name="scalability" id="scal-4" value="4" required data-sgbd="PostgreSQL">
+                            Sera no muy alto pero si tendra muchos datos.
+                        </label>
+                        <label for="scal-5">
+                            <input type="radio" name="scalability" id="scal-5" value="5" required data-sgbd="MongoDB">
+                            Sera alto y escalará de forma horizontal.
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Rendimiento
+                    </h3>
+                    <span class="question">
+                        5. El rendimiento de tu SGBD debe ser:
+                    </span>
+                    <div class="options">
+                        <label for="per-1">
+                            <input type="radio" name="performance" id="per-1" value="1" required data-sgbd="MySQL">
+                            Bueno para aplicaciones entre pequeñas y medianas.
+                        </label>
+                        <label for="per-2">
+                            <input type="radio" name="performance" id="per-2" value="2" required data-sgbd="Oracle">
+                            Excelentemente optimizado para grandes cargas.
+                        </label>
+                        <label for="per-3">
+                            <input type="radio" name="performance" id="per-3" value="3" required data-sgbd="SQLServer">
+                            Muy bueno en entornos de Windows.
+                        </label>
+                        <label for="per-4">
+                            <input type="radio" name="performance" id="per-4" value="4" required data-sgbd="PostgreSQL">
+                            Muy bueno en aplicaciones mas complejas.
+                        </label>
+                        <label for="per-5">
+                            <input type="radio" name="performance" id="per-5" value="5" required data-sgbd="MongoDB">
+                            Muy rápido para lectura y escritura de documentos.
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Soporte
+                    </h3>
+                    <span class="question">
+                        6. Deseas un SGBD con soporte/comunidad:
+                    </span>
+                    <div class="options">
+                        <label for="sup-1">
+                            <input type="radio" name="support" id="sup-1" value="1" required data-sgbd="MySQL">
+                            Soporte comercial y amplia comunidad.
+                        </label>
+                        <label for="sup-2">
+                            <input type="radio" name="support" id="sup-2" value="2" required data-sgbd="Oracle">
+                            Soporte comercial fuerte y comunidad limitada.
+                        </label>
+                        <label for="sup-3">
+                            <input type="radio" name="support" id="sup-3" value="3" required data-sgbd="SQLServer">
+                            Soporte de Microsoft y comunidad activa.
+                        </label>
+                        <label for="sup-4">
+                            <input type="radio" name="support" id="sup-4" value="4" required data-sgbd="PostgreSQL">
+                            Soporte amplio y comunidad grande.
+                        </label>
+                        <label for="sup-5">
+                            <input type="radio" name="support" id="sup-5" value="5" required data-sgbd="MongoDB">
+                            Soporte regular y comunidad grande.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Compatibilidad
+                    </h3>
+                    <span class="question">
+                        7. ¿Qué tan compatible te gustaría que fuese tu proyecto?:
+                    </span>
+                    <div class="options">
+                        <label for="comp-1">
+                            <input type="radio" name="compatibility" id="comp-1" value="1" required data-sgbd="MySQL">
+                            Amplia compatibilidad con lenguajes y plataformas.
+                        </label>
+                        <label for="comp-2">
+                            <input type="radio" name="compatibility" id="comp-2" value="2" required data-sgbd="Oracle">
+                            Altamente compatible con soluciones de Oracle.
+                        </label>
+                        <label for="comp-3">
+                            <input type="radio" name="compatibility" id="comp-3" value="3" required data-sgbd="SQLServer">
+                            Altamente compatible con tecnologías de Microsoft.
+                        </label>
+                        <label for="comp-4">
+                            <input type="radio" name="compatibility" id="comp-4" value="4" required data-sgbd="PostgreSQL">
+                            Altamente compatible con más plataformas que lenguajes.
+                        </label>
+                        <label for="comp-5">
+                            <input type="radio" name="compatibility" id="comp-5" value="5" required data-sgbd="MongoDB">
+                            Amplia compatibilidad en entornos web.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Administración
+                    </h3>
+                    <span class="question">
+                        8. ¿Qué tan fácil de administrar deseas tu SGBD?:
+                    </span>
+                    <div class="options">
+                        <label for="mgmt-1">
+                            <input type="radio" name="management" id="mgmt-1" value="1" required data-sgbd="MySQL">
+                            Relativamente fácil.
+                        </label>
+                        <label for="mgmt-2">
+                            <input type="radio" name="management" id="mgmt-2" value="2" required data-sgbd="Oracle">
+                            Que requiera de expertos.
+                        </label>
+                        <label for="mgmt-3">
+                            <input type="radio" name="management" id="mgmt-3" value="3" required data-sgbd="SQLServer">
+                            Que sea intuitivo.
+                        </label>
+                        <label for="mgmt-4">
+                            <input type="radio" name="management" id="mgmt-4" value="4" required data-sgbd="PostgreSQL">
+                            Qué este bien documentado.
+                        </label>
+                        <label for="mgmt-5">
+                            <input type="radio" name="management" id="mgmt-5" value="5" required data-sgbd="MongoDB">
+                            Que sea flexible.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Flexibilidad
+                    </h3>
+                    <span class="question">
+                        9. ¿Qué tan flexible debe ser tu SGBD?:
+                    </span>
+                    <div class="options">
+                        <label for="flex-1">
+                            <input type="radio" name="flexibility" id="flex-1" value="1" required data-sgbd="MySQL">
+                            Moderadamente flexible.
+                        </label>
+                        <label for="flex-2">
+                            <input type="radio" name="flexibility" id="flex-2" value="2" required data-sgbd="Oracle">
+                            Muy flexible para grandes empresas.
+                        </label>
+                        <label for="flex-3">
+                            <input type="radio" name="flexibility" id="flex-3" value="3" required data-sgbd="SQLServer">
+                            Prioritariamente flexible.
+                        </label>
+                        <label for="flex-4">
+                            <input type="radio" name="flexibility" id="flex-4" value="4" required data-sgbd="PostgreSQL">
+                            Muy flexible para soluciones customizadas.
+                        </label>
+                        <label for="flex-5">
+                            <input type="radio" name="flexibility" id="flex-5" value="5" required data-sgbd="MongoDB">
+                            Muy flexible para datos no estructurados.
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-cont">
+                    <h3 class="aspect">
+                        Recuperación
+                    </h3>
+                    <span class="question">
+                        10. Necesitas un sistema de recuperación:
+                    </span>
+                    <div class="options">
+                        <label for="back-1">
+                            <input type="radio" name="backup" id="back-1" value="1" required data-sgbd="MySQL">
+                            Básico.
+                        </label>
+                        <label for="back-2">
+                            <input type="radio" name="backup" id="back-2" value="2" required data-sgbd="Oracle">
+                            Avanzado ante desastres.
+                        </label>
+                        <label for="back-3">
+                            <input type="radio" name="backup" id="back-3" value="3" required data-sgbd="SQLServer">
+                            Robusto y fácil de integrar.
+                        </label>
+                        <label for="back-4">
+                            <input type="radio" name="backup" id="back-4" value="4" required data-sgbd="PostgreSQL">
+                            Robusto con capacidades nativas.
+                        </label>
+                        <label for="back-5">
+                            <input type="radio" name="backup" id="back-5" value="5" required data-sgbd="MongoDB">
+                            Flexible y especializado.
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frm-submit">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+
+    <!-- Importante que tenga la clase hide al comenzar el form -->
+    <div class="recommended-cont hide" id="pop-up">
+        <div class="recommended">
+            <h1 class="title">SGBD recomendados:</h1>
+            <p class="inst">Los SGBD que aparecen están enlistados de modo que el primero es el que más se acerca a sus necesidades y el último es el que menos cumple con las mismas.</p>
+
+            <ol class="list" id="list">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+                <li>Elemento 5</li>
+            </ol>
+
+            <button type="button" id="restart">Reiniciar</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
